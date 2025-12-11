@@ -12,12 +12,12 @@ Some of the frequent troubleshooting experience accumulated building cross-platf
 - **Projucer era (JUCE 5-6)**: Used monolithic `#include <JuceHeader.h>`
 - **CMake era (JUCE 7+)**: Must include specific module headers
 
-** Old Way (No longer works with CMake):**
+**Old Way (No longer works with CMake):**
 ```cpp
 #include <JuceHeader.h>  // Don't do this!
 ```
 
-** New Way (CMake-compatible):**
+**New Way (CMake-compatible):**
 ```cpp
 #include <juce_audio_processors/juce_audio_processors.h>
 #include <juce_dsp/juce_dsp.h>
